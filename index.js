@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({
 app.set('port', (process.env.PORT || 3000))
 
 app.get('/', function(req, res) {
-  res.send('SuTestBot Server')
+  res.send('Uni888 Server')
 })
 
 function sendMessage(chat_id, message){
-  axios.post('https://api.telegram.org/bot567142465:AAFNg7-ddCEY-eT4Z0RP0zVRZ5-2cyXG_Xo/sendMessage', {
+  axios.post('https://api.telegram.org/bot852711651:AAGfHXUOYrOhAlp4ZgLyN_JYqpohIpj3OLM/sendMessage', {
     chat_id: chat_id,
     text: message
   })
